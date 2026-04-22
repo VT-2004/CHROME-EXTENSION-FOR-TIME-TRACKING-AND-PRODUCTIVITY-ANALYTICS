@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            animation: fadeIn 0.6s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- 🌙 Theme Toggle -->
+    <button id="toggleTheme" class="theme-btn">🌙</button>
+
+    <h1 id="title">📊 Productivity Dashboard</h1>
+
+    <!-- 🔥 Cards -->
+    <div class="cards">
+        <div class="card total">
+            <h3>Total Time</h3>
+            <p id="totalTime">0 min</p>
+        </div>
+
+        <div class="card productive">
+            <h3>Productive</h3>
+            <p id="productiveTime">0 min</p>
+        </div>
+
+        <div class="card unproductive">
+            <h3>Unproductive</h3>
+            <p id="unproductiveTime">0 min</p>
+        </div>
+    </div>
+
+    <!-- 🔥 Score -->
+    <div class="score-box">
+        <p id="score">Productivity Score: 0%</p>
+        <p id="topSite"></p>
+    </div>
+
+    <!-- 📊 Chart -->
+    <div class="chart-box">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <!-- 🌐 Sites -->
+    <div class="sites">
+        <h2>🌐 Website Usage</h2>
+        <ul id="siteList"></ul>
+    </div>
+
+    <p id="loading">Loading data...</p>
+
+</div>
+
+<script src="dashboard.js"></script>
+
+</body>
+</html>
