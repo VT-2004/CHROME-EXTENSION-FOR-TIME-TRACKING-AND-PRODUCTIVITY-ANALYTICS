@@ -80,6 +80,7 @@ chrome://extensions/
 Enable Developer Mode
 Click Load Unpacked
 Select the extension/ folder
+
 📊 Dashboard Features
 📌 Total time tracking
 📌 Productive vs Unproductive breakdown
@@ -93,6 +94,8 @@ Time spent on each website is recorded
 Data is sent to a Node.js backend
 Backend stores data in MongoDB
 Dashboard fetches and visualizes analytics
+
+
 🧠 Key Highlights
 Optimized tracking (records only on tab switch → avoids redundant data)
 Clean data handling and filtering
@@ -101,6 +104,9 @@ Real-time analytics pipeline
 
 Extension → Backend → Database → Dashboard
 Modern UI/UX with animations and dark mode
+
+
+
 📁 Project Structure
 productivity-tracker/
 │
@@ -112,6 +118,9 @@ productivity-tracker/
 │   ├── piechart.png
 │
 └── README.md
+
+
+
 🧠 Learning Outcomes
 Chrome Extension Development
 Browser activity tracking
@@ -124,6 +133,9 @@ Full-stack system design
 📄 Export analytics as PDF
 🤖 AI-based productivity suggestions
 ☁️ Cloud deployment
+
+
+
 📌 Author
 
 Vikas Hanamant Talawar
