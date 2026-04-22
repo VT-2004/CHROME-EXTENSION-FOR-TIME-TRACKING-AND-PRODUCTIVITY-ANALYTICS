@@ -53,7 +53,7 @@ function trackTime(url) {
 
         // 🚫 Ignore very small durations
         if (timeSpent > 2) {
-            fetch("http://localhost:5000/api/activity", {
+            fetch("https://chrome-extension-for-time-tracking-and-1bef.onrender.com/api/activity", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
