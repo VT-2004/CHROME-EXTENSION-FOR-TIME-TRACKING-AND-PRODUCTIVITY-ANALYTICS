@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #eef2f7, #dbe6f6);
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.total { background: #3498db; }
+.productive { background: #2ecc71; }
+.unproductive { background: #e74c3c; }
+
+/* Score */
+.score-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Chart */
+.chart-box {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+/* List */
+.sites {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+li {
+    padding: 10px;
+}
+
+/* Dark mode */
+.dark {
+    background: #1e272e;
+    color: white;
+}
+
+.dark .chart-box,
+.dark .sites {
+    background: #2f3640;
+}
+
+/* Toggle button */
+.theme-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Popup */
+.popup {
+    text-align: center;
+}
