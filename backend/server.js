@@ -6,8 +6,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-// 🔗 MongoDB connection
-mongoose.connect("mongodb+srv://VT-2004:VT6360681710@chatapp.azpswvj.mongodb.net/productivity?appName=chatapp")
+// 🔗 MongoDB connection (FIXED)
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log("MongoDB connected"))
     .catch(err => console.log("DB Error:", err));
 
@@ -60,4 +60,7 @@ app.get("/", (req, res) => {
     res.send("Productivity Tracker Backend Running");
 });
 
-app.listen(5000, () => console.log("Server running on port 5000"));
+// 🔥 IMPORTANT FIX FOR RENDER
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => console.log("Server running on port", PORT));
